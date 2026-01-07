@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jayden Deese — Church Websites</title>
+  <title>Jayden Deese — Founder & Engineer | Sports Analytics & Data Systems</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f5f5f5;
-      color: #000000;
+      background: #000000;
+      color: #ffffff;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -19,131 +19,149 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .card {
-      max-width: 1000px;
+    .business-card {
+      max-width: 1200px;
       width: 100%;
       background: #ffffff;
-      border-radius: 2px;
+      color: #000000;
       display: grid;
-      grid-template-columns: 380px 1fr;
-      overflow: hidden;
-      box-shadow: 0 30px 90px rgba(212, 175, 55, 0.2);
-      border: 1px solid rgba(212, 175, 55, 0.3);
+      grid-template-columns: 400px 1fr;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 2px solid #000000;
     }
 
-    .left {
-      background: linear-gradient(165deg, #fafafa 0%, #f0f0f0 100%);
+    .left-panel {
+      background: #000000;
+      color: #ffffff;
       padding: 4rem 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      border-right: 1px solid rgba(212, 175, 55, 0.3);
+      justify-content: space-between;
       position: relative;
-      overflow: hidden;
-    }
-
-    .left::before {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
     }
 
     .headshot-container {
-      position: relative;
-      z-index: 2;
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     .headshot {
-      width: 220px;
-      height: 220px;
-      border-radius: 2px;
+      width: 200px;
+      height: 200px;
+      border-radius: 0;
       object-fit: cover;
       display: block;
-      border: 3px solid rgba(212, 175, 55, 0.4);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 0 3px #000000;
     }
 
-    .headshot:hover {
-      transform: translateY(-8px);
-      border-color: #D4AF37;
-      box-shadow: 0 30px 80px rgba(212, 175, 55, 0.3);
+    .name-title {
+      text-align: center;
+      margin-bottom: 3rem;
     }
 
     .name {
-      font-size: 1.8rem;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: 800;
       letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
-      color: #D4AF37;
-      text-align: center;
-      position: relative;
-      z-index: 2;
+      text-transform: uppercase;
     }
 
     .title {
-      font-size: 0.95rem;
-      color: #666;
-      text-align: center;
-      margin-bottom: 3rem;
-      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+      color: #cccccc;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       font-weight: 500;
-      position: relative;
-      z-index: 2;
+      margin-bottom: 0.25rem;
     }
 
-    .contact-links {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .education {
+      font-size: 0.75rem;
+      color: #999999;
+      text-align: center;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    .companies {
       width: 100%;
-      position: relative;
-      z-index: 2;
+      margin: 3rem 0;
+    }
+
+    .company-logo {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .company-logo:last-child {
+      margin-bottom: 0;
+    }
+
+    .company-logo img {
+      max-width: 100%;
+      height: auto;
+      max-height: 60px;
+      object-fit: contain;
+    }
+
+    .company-link {
+      display: block;
+      margin-top: 0.5rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: opacity 0.3s ease;
+    }
+
+    .company-link:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      width: 100%;
+      text-align: center;
+      margin-top: auto;
+      padding-top: 2rem;
+      border-top: 1px solid #333333;
     }
 
     .contact-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
       background: transparent;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: 1px;
-      color: #D4AF37;
+      border: 2px solid #ffffff;
+      color: #ffffff;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       transition: all 0.3s ease;
     }
 
     .contact-btn:hover {
-      background: rgba(212, 175, 55, 0.15);
-      border-color: #D4AF37;
-      transform: translateX(4px);
+      background: #ffffff;
+      color: #000000;
     }
 
-    .right {
+    .right-panel {
       padding: 4rem 3.5rem;
+      background: #ffffff;
+      color: #000000;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       gap: 3rem;
     }
 
     .section {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      padding-bottom: 2.5rem;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 2rem;
     }
 
     .section:last-child {
@@ -152,88 +170,94 @@
     }
 
     .section-label {
-      font-size: 0.75rem;
-      color: #D4AF37;
+      font-size: 0.7rem;
+      color: #000000;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      margin-bottom: 1.25rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 1.5rem;
       font-weight: 700;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 0.5rem;
+      display: inline-block;
     }
 
     .section-content {
-      color: #333;
+      color: #000000;
       font-size: 1rem;
       line-height: 1.8;
     }
 
-    .section-content strong {
-      color: #000;
-      font-weight: 600;
+    .section-content p {
+      margin-bottom: 1rem;
     }
 
-    .price-display {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #D4AF37;
-      letter-spacing: -0.02em;
-      margin-top: 0.5rem;
+    .section-content p:last-child {
+      margin-bottom: 0;
     }
 
-    .features {
+    .portfolio-grid {
       display: grid;
-      gap: 0.75rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
     }
 
-    .feature {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      color: #444;
-      font-size: 0.95rem;
+    .portfolio-item {
+      border: 2px solid #000000;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
     }
 
-    .feature::before {
-      content: '—';
-      color: #D4AF37;
+    .portfolio-item:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .portfolio-item h3 {
+      font-size: 1.1rem;
       font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    .link {
-      color: #D4AF37;
+    .portfolio-item p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: inherit;
+    }
+
+    .portfolio-item a {
+      color: inherit;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
-      border-bottom: 1px solid transparent;
+      display: inline-block;
+      margin-top: 0.5rem;
+      border-bottom: 1px solid currentColor;
     }
 
-    .link:hover {
-      color: #B8860B;
-      border-bottom-color: #D4AF37;
+    .portfolio-item:hover a {
+      border-bottom-color: #ffffff;
     }
 
-    .tagline {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.7rem;
-      color: #888;
+    .highlight {
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      white-space: nowrap;
+      letter-spacing: 0.05em;
     }
 
     @media (max-width: 900px) {
-      .card {
+      .business-card {
         grid-template-columns: 1fr;
-        max-width: 450px;
+        max-width: 600px;
       }
 
-      .left {
+      .left-panel {
         padding: 3rem 2rem;
-        border-right: none;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+      }
+
+      .right-panel {
+        padding: 3rem 2rem;
       }
 
       .headshot {
@@ -241,15 +265,8 @@
         height: 180px;
       }
 
-      .right {
-        padding: 3rem 2rem;
-      }
-
-      .tagline {
-        position: static;
-        transform: none;
-        margin-top: 2rem;
-        text-align: center;
+      .portfolio-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -258,80 +275,134 @@
         padding: 1rem;
       }
 
-      .headshot {
-        width: 150px;
-        height: 150px;
+      .left-panel {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .right-panel {
+        padding: 2.5rem 1.5rem;
+        gap: 2rem;
       }
 
       .name {
         font-size: 1.5rem;
       }
 
-      .right {
-        padding: 2.5rem 1.5rem;
-        gap: 2.5rem;
-      }
-
-      .price-display {
-        font-size: 2rem;
+      .headshot {
+        width: 150px;
+        height: 150px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <!-- Left Side: Photo + Contact -->
-    <div class="left">
-      <div class="headshot-container">
-        <img
-          src="19C19CAF-A025-432A-9AAD-83DD2BDF48A4_1_105_c.jpeg"
-          alt="Jayden Deese"
-          class="headshot"
-        />
+  <div class="business-card">
+    <!-- Left Panel: Personal Info & Companies -->
+    <div class="left-panel">
+      <div>
+        <div class="headshot-container">
+          <img
+            src="19C19CAF-A025-432A-9AAD-83DD2BDF48A4_1_105_c.jpeg"
+            alt="Jayden Deese"
+            class="headshot"
+          />
+        </div>
+
+        <div class="name-title">
+          <div class="name">Jayden Deese</div>
+          <div class="title">Founder & Engineer</div>
+          <div class="title">Sports Analytics & Data Systems</div>
+          <div class="education">
+            Graduate of East Carolina University<br>
+            B.S. in Business Administration<br>
+            Concentration: Management Information Systems (MIS)
+          </div>
+        </div>
+
+        <div class="companies">
+          <div class="company-logo">
+            <img src="ChatGPT Image May 31, 2025, 02_26_01 PM 2.PNG" alt="Momentum Ignition" />
+            <a href="#" class="company-link">Momentum Ignition</a>
+          </div>
+          <div class="company-logo">
+            <img src="MomentumoddsLogo2.png" alt="MomentumOdds" />
+            <a href="https://live.momentumodds.com" target="_blank" rel="noopener noreferrer" class="company-link">live.momentumodds.com</a>
+          </div>
+        </div>
       </div>
 
-      <div class="name">Jayden Deese</div>
-      <div class="title">ECU Graduate</div>
-
-      <div class="contact-links">
+      <div class="contact-info">
         <a class="contact-btn" href="tel:2528332428">Call / Text</a>
-        <a class="contact-btn" href="mailto:jay.deese1210@gmail.com?subject=Church%20Website">Email</a>
+        <a class="contact-btn" href="mailto:jay.deese1210@gmail.com?subject=Business%20Inquiry">Email</a>
       </div>
-
-      <div class="tagline">Eastern North Carolina</div>
     </div>
 
-    <!-- Right Side: Information -->
-    <div class="right">
+    <!-- Right Panel: Bio & Portfolio -->
+    <div class="right-panel">
       <div class="section">
-        <div class="section-label">Service</div>
+        <div class="section-label">About</div>
         <div class="section-content">
-          Simple, clean church websites for small congregations. Mobile-friendly sites with service times, directions, contact info, and photo galleries.
+          <p>
+            Founder of <span class="highlight">Momentum Ignition</span>, where I design and engineer data-driven systems that identify, quantify, and visualize momentum patterns across high-frequency datasets.
+          </p>
+          <p>
+            Creator of <span class="highlight">MomentumOdds</span>, a sports analytics and arbitrage platform that processes millions of data points to deliver real-time insights, predictive modeling, and mispriced odds detection across multiple sports.
+          </p>
+          <p>
+            I specialize in bridging business strategy, data engineering, and machine learning to build scalable platforms that turn complex data into actionable decisions.
+          </p>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-label">Investment</div>
-        <div class="price-display">$250</div>
-        <div class="section-content" style="margin-top: 0.75rem;">
-          One-time payment. No contracts. Two months of updates included.
+        <div class="section-label">Portfolio</div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <h3>MomentumOdds</h3>
+            <p>Sports analytics platform processing millions of data points for real-time insights, predictive modeling, and arbitrage opportunities.</p>
+            <a href="https://live.momentumodds.com" target="_blank" rel="noopener noreferrer">View Platform →</a>
+          </div>
+          <div class="portfolio-item">
+            <h3>Jobes Chapel Church</h3>
+            <p>Clean, professional website with service times, location, contact information, and announcements for a local congregation.</p>
+            <a href="https://jobeschapelchurch.com" target="_blank" rel="noopener noreferrer">View Site →</a>
+          </div>
+          <div class="portfolio-item">
+            <h3>Data Systems</h3>
+            <p>Custom data engineering solutions for high-frequency datasets, momentum pattern detection, and scalable analytics infrastructure.</p>
+          </div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-label">Recent Work</div>
+        <div class="section-label">Services</div>
         <div class="section-content">
-          <a class="link" href="https://jobeschapelchurch.com" target="_blank" rel="noopener noreferrer">jobeschapelchurch.com</a>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-label">Process</div>
-        <div class="features">
-          <div class="feature">Send church details and photos</div>
-          <div class="feature">Preview site in a few days</div>
-          <div class="feature">Approve and publish</div>
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Website Development</h3>
+            <div style="border: 2px solid #000000; padding: 1.5rem; margin-bottom: 1.5rem;">
+              <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">$250</div>
+              <p style="margin-bottom: 0.5rem;"><strong>Full Integration Package</strong></p>
+              <p style="font-size: 0.9rem; line-height: 1.6;">One-time payment includes complete website development with two months of updates and support. Perfect for businesses needing ongoing content management and maintenance.</p>
+            </div>
+            <div style="border: 2px solid #000000; padding: 1.5rem;">
+              <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">$150</div>
+              <p style="margin-bottom: 0.5rem;"><strong>Static Site Launch</strong></p>
+              <p style="font-size: 0.9rem; line-height: 1.6;">One-time payment for a clean, professional static website. Ideal for businesses that need a simple online presence with essential information.</p>
+            </div>
+          </div>
+          <p style="margin-top: 2rem;">
+            <strong>Data Engineering & Analytics:</strong> Design and build scalable systems for processing, analyzing, and visualizing high-frequency data streams.
+          </p>
+          <p>
+            <strong>Predictive Modeling:</strong> Develop machine learning models for pattern recognition, forecasting, and decision support.
+          </p>
+          <p>
+            <strong>Platform Development:</strong> Full-stack development of analytics platforms, APIs, and data visualization tools.
+          </p>
+          <p>
+            <strong>Business Intelligence:</strong> Transform raw data into actionable insights that drive strategic business decisions.
+          </p>
         </div>
       </div>
     </div>
